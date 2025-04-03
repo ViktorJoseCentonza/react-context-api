@@ -1,5 +1,5 @@
 import PostList from "./PostList"
-export default function PostPage() {
+export default function PostsPage() {
     return (
         <PostList />
     )

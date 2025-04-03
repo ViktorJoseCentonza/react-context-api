@@ -1,12 +1,14 @@
-import { useState } from 'react'
 import './App.css'
-import PostsPage from './components/PostPage'
+import { PostListProvider } from "./contexts/PostListContext";
+import PostsPage from './components/PostsPage'
 
 function App() {
 
   return (
     <>
-      <PostsPage />
+      <PostListProvider>
+        <PostsPage />
+      </PostListProvider>
     </>
   )
 }
