@@ -8,7 +8,7 @@ export default function PostList() {
     return (
         <>
             {PostList.map((post) => (
-                < PostCard properties={post} />
+                < PostCard key={`post-${post.id}`} properties={post} />
             ))}
 
         </>
